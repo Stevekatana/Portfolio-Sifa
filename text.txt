@@ -1,0 +1,7 @@
+| Purpose           | Color          | Hex Code  |
+| ----------------- | -------------- | --------- |
+| **Background**    | Charcoal Black | `#1C1C1E` |
+| **Accent**        | Soft White     | `#F5F5F7` |
+| **Primary Text**  | Warm Gray      | `#A1A1A6` |
+| **Highlight**     | Muted Gold     | `#D4AF37` |
+| **Detail/Accent** | Dusty Rose     | `#B87C7C` |
