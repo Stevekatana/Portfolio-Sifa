@@ -48,7 +48,7 @@ function App() {
   }
 
   return (
-    <div className='bg-midnight'>
+    <div className=' bg-midnight'>
       {/* Home */}
       <section ref={goNav} className='bg-midnight flex sticky top-0'>
         <div className='w-1/2 flex items-center justify-center p-3 lg:mt-3'>
