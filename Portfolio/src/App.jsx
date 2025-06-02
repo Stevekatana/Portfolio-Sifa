@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
-import AboutImg from './assets/about.JPG'
-import Landing from './assets/landing.jpg'
+import AboutImg from "./assets/about2.jpg";
+import Landing from "./assets/Landing.jpeg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
@@ -9,8 +9,11 @@ import { FaWhatsapp } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { FaChevronUp } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import {Link} from 'react-router-dom'
 
 function App() {
+
+
   const [isDrop, setIsDrop] = useState(false)
   const dropdown = document.querySelector('#dropdown')
 
@@ -48,9 +51,9 @@ function App() {
   }
 
   return (
-    <div className=' bg-midnight'>
+    <div className='bg-midnight'>
       {/* Home */}
-      <section ref={goNav} className='bg-midnight flex sticky top-0'>
+      <section ref={goNav} className='bg-midnight flex sticky top-0 z-10'>
         <div className='w-1/2 flex items-center justify-center p-3 lg:mt-3'>
             <h1 className='text-3xl lg:text-4xl text-Highlight' onClick={scrollNav}>Basai Jr</h1>
         </div>
@@ -68,8 +71,8 @@ function App() {
 
       {/* <Home /> */}
       <section ref={goHome} className='bg-midnight text-white h-screen'>
-        <div className='bg-black h-full opacity-[0.4]'>
-          <img src={Landing} alt="image not found" className='h-full w-full'/>
+        <div className='bg-black h-full'>
+          <img src={Landing} alt="image not found" className='h-full w-full opacity-[0.4]'/>
         </div>
         <div className=' absolute top-[50%] w-full text-center'>
           <p className='text-4xl lg:text-6xl lg:font-semibold'>Telling stories through lens & light</p>
@@ -81,7 +84,7 @@ function App() {
           <h1 className='text-Highlight mt-5 :pt-2 pb-2 text-center text-3xl lg:text-4xl lg:pt-2 capitalize'>basai jr</h1>
           <div className='lg:flex lg:items-center lg:justify-center lg:gap-20'>
             <div className='flex items-center justify-center'>
-              <img src={AboutImg} alt="No about image found" className='rounded-md h-52 w-52 lg:w-72 lg:h-72'/>
+              <img src={AboutImg} alt="No about image found" className='rounded-md h-72 w-52 lg:w-72 lg:h-[350px]'/>
             </div>
             <div className='mt-5 text-center lg:w-[500px] pb-5'>
               <p className='text-Accent lg:text-xl'>
@@ -92,17 +95,17 @@ function App() {
         </section>
 
       {/* <Gallery /> */}
-      <section ref={goPortfolio} className='text-white p-3'>
+      <section ref={goPortfolio} className='text-white p-3 mt-5 mb-5'>
         <div className='text-center'>
           <h1 className='text-3xl text-Highlight'>My Work</h1>
         </div>
         <div className='flex items-center justify-center mt-5 mb-5'>
           <div>
             <div className='mb-5 lg:hover:bg-Highlight lg:hover:border-solid lg:hover:font-semibold lg:hover:text-midnight flex items-center justify-center rounded-md text-center text-Highlight border-2 border-solid lg:border-dashed  w-72 h-10'>
-              <p className='text-2xl'>Potrait Shots</p>
+              <Link to='/potrait'className='text-2xl'>Potrait Shots</Link>
             </div>
             <div className='mb-2 lg:hover:bg-Highlight lg:hover:border-solid lg:hover:font-semibold lg:hover:text-midnight flex items-center justify-center rounded-md text-center text-Highlight border-2 border-solid lg:border-dashed  w-72 h-10'>
-              <p className='text-2xl'>Product Shots</p>
+              <Link to='/product' className='text-2xl'>Product Shots</Link>
             </div>
           </div>
         </div>
