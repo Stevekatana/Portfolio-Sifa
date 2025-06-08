@@ -72,7 +72,7 @@ function App() {
       {/* <Home /> */}
       <section ref={goHome} className='bg-midnight text-white h-screen'>
         <div className='bg-black h-full'>
-          <img src={Landing} alt="image not found" className='h-full w-full opacity-[0.4]'/>
+          <img src={Landing} alt="image not found" className='h-full w-full opacity-[0.4] object-cover'/>
         </div>
         <div className=' absolute top-[50%] w-full text-center'>
           <p className='text-4xl lg:text-6xl lg:font-semibold'>Telling stories through lens & light</p>
@@ -84,11 +84,13 @@ function App() {
           <h1 className='text-Highlight mt-5 :pt-2 pb-2 text-center text-3xl lg:text-4xl lg:pt-2 capitalize'>basai jr</h1>
           <div className='lg:flex lg:items-center lg:justify-center lg:gap-20'>
             <div className='flex items-center justify-center'>
-              <img src={AboutImg} alt="No about image found" className='rounded-md h-72 w-52 lg:w-72 lg:h-[350px]'/>
+              <img src={AboutImg} alt="No about image found" className='object-fill rounded-md h-72 w-52 lg:w-72 lg:h-[350px]'/>
             </div>
             <div className='mt-5 text-center lg:w-[500px] pb-5'>
               <p className='text-Accent lg:text-xl'>
-                I am a visual storyteller, drawn to the poetry of light, motion, and emotion. Through photography, film, and editing, I seek not just to capture moments, but to translate feeling into frame—where every shot speaks, and silence has texture. My work lives in the space between reality and reverie, guided by instinct, rhythm, and a deep love for the unseen stories all around us. Whether crafting a fleeting still or a moving sequence, I approach each project like a canvas—layering perspective, color, and soul to evoke something honest and unforgettable.
+                A freelance photographer, I specialize in capturing the essence of diverse subjects with a unique and artistic perspective.
+                I love all things photography and fashion and I work across different elements by creating Memories through Moments.
+                Through my website I aim to showcase  just a few examples of the kind of work I do on a daily bases.
               </p>
             </div>
           </div>
@@ -102,10 +104,10 @@ function App() {
         <div className='flex items-center justify-center mt-5 mb-5'>
           <div>
             <div className='mb-5 lg:hover:bg-Highlight lg:hover:border-solid lg:hover:font-semibold lg:hover:text-midnight flex items-center justify-center rounded-md text-center text-Highlight border-2 border-solid lg:border-dashed  w-72 h-10'>
-              <Link to='/potrait'className='text-2xl'>Potrait Shots</Link>
+              <Link to='/potrait'className='text-2xl'>Portrait Shots</Link>
             </div>
             <div className='mb-2 lg:hover:bg-Highlight lg:hover:border-solid lg:hover:font-semibold lg:hover:text-midnight flex items-center justify-center rounded-md text-center text-Highlight border-2 border-solid lg:border-dashed  w-72 h-10'>
-              <Link to='/product' className='text-2xl'>Product Shots</Link>
+              <Link to='/product' className='text-2xl'>Brand Visuals</Link>
             </div>
           </div>
         </div>
@@ -149,7 +151,7 @@ function App() {
         </div>
 
       <div className='text-center bg-midnight '>
-        <p className='text-Highlight'>&copy; 2024 all rights reserved</p>
+        <p className='text-Highlight'>&copy; 2025 all rights reserved</p>
       </div>
     </div>
   )
