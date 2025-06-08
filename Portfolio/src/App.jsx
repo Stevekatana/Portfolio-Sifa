@@ -146,7 +146,7 @@ function App() {
             </div>
         </div>
 
-        <div className=' opacity-[0.5] border-2 border-black lg:hidden w-10 h-10 bg-white flex items-center justify-center rounded-[999px] sticky bottom-10 left-3' onClick={scrollNav}>
+        <div className=' opacity-[0.5] border-2 border-black lg:hidden w-10 h-10 bg-white flex items-center justify-center rounded-[999px] sticky bottom-10 left-3' onClick={scrollHome}>
           <FaChevronUp className='text-3xl'/>
         </div>
 
